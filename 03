@@ -1,0 +1,30 @@
+// Nama         : Melinta Nurul Islam
+// Nim dan Kelas: 19102092 dan S1-IF-G
+
+#include <iostream>
+#include <conio.h>
+using namespace std;
+
+main(){
+    int a; // deklarasi variabel yang digunakan dalam program yaitu a
+    
+    menu:
+        
+    cout<<"Input Nilai A : "; // menampilkan output text
+    cin>>a; // input kedalam variabel a
+    
+    if(a>0){ // jika variabel yang digunakan lebih besar dari nol maka ada dua kemungkinan
+        if(a%4==0) // kemungkinan yang pertama hasil sisa bagi variabel dengan 4 adalah 0
+            cout<<a<<" adalah bilangan positif kelipatan 4"<<endl;
+        else{
+            cout<<a<<" adalah bukan bilangan positif atau bukan kelipatan 4"<<endl;
+            getch();
+            goto menu;
+        }
+    }else{ // kemungkinan lain variabel yang dimasukkan tidak emmenuhi persyatan if maka akan di proses oleh else
+        cout<<"Masukan Angka Lebih Besar Dari 0"<<endl;
+        getch();
+        goto menu;
+    }
+    getch();
+}
